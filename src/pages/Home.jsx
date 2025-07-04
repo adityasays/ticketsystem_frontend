@@ -313,10 +313,10 @@ const HelpdeskSystem = () => {
     };
 
     return (
-      <div className="min-h-screen bg-gray-200 flex items-center justify-center">
-        <div className="bg-teal-400 p-8 rounded-lg shadow-lg w-96">
+      <div className="min-h-screen bg-teal-400 flex items-center justify-center">
+        <div className="bg-teal-400 ">
           <div className="bg-teal-200 p-6 rounded-lg">
-            <div className="bg-white p-4 rounded border-2 border-purple-400 mb-4">
+            <div className=" mb-4">
               <h2 className="text-center font-bold text-lg">Helpdesk System</h2>
             </div>
             <div className="space-y-4">
@@ -364,10 +364,10 @@ const HelpdeskSystem = () => {
     };
 
     return (
-      <div className="min-h-screen bg-gray-200 flex items-center justify-center">
-        <div className="bg-teal-400 p-8 rounded-lg shadow-lg w-96">
+      <div className="min-h-screen bg-teal-400 flex items-center justify-center">
+        <div className="bg-teal-400 ">
           <div className="bg-teal-200 p-6 rounded-lg">
-            <div className="bg-white p-4 rounded border-2 border-purple-400 mb-4">
+            <div className=" p-4 rounded   mb-4">
               <h2 className="text-center font-bold text-lg">Helpdesk System</h2>
             </div>
             <p className="text-center mb-4">Sign up here</p>
@@ -413,10 +413,10 @@ const HelpdeskSystem = () => {
   };
 
   const ForgotPasswordPage = () => (
-    <div className="min-h-screen bg-gray-200 flex items-center justify-center">
-      <div className="bg-teal-400 p-8 rounded-lg shadow-lg w-96">
+    <div className="min-h-screen bg-teal-400 flex items-center justify-center">
+      <div className="bg-teal-400 ">
         <div className="bg-teal-200 p-6 rounded-lg">
-          <div className="bg-white p-4 rounded border-2 border-purple-400 mb-4">
+          <div className=" p-4  mb-4">
             <h2 className="text-center font-bold text-lg">Helpdesk System</h2>
           </div>
           <p className="text-center mb-4 text-sm">Enter your email address and we'll send you a link to reset your password.</p>
@@ -514,7 +514,7 @@ const HelpdeskSystem = () => {
           {currentView !== 'login' && currentView !== 'signup' && currentView !== 'forgot' && (
             <Header title={currentView} role={userRole} />
           )}
-          <div className="p-6">
+          <div className="p-0">
             {errorMessage && <p className="text-red-500 text-sm mb-4">{errorMessage}</p>}
             {isLoading && <p className="text-gray-700">Loading...</p>}
             {!isLoading && (
